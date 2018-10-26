@@ -52,7 +52,7 @@ np.vstack((features[ind_0,:], features[ind_1_downsampled,:]))
 ind_0_upsampled = np.random.choice(ind_0, size=n_1, replace=True)
 
 # Join together the vectors of target
-np.concatenate((target[ind_0_upsampled], target[i_1]))
+np.concatenate((target[ind_0_upsampled], target[ind_1]))
 
 # Join together the arrays of features
-np.vstack((features[ind_0_upsampled,:], features[i_1,:]))
+np.vstack((features[ind_0_upsampled,:], features[ind_1,:]))
